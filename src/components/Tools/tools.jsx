@@ -1,24 +1,34 @@
+import { useState } from "react";
 import "./tools.css";
 
+const timelines = ["1d", "3d", "1w", "1m", "6m", "1y", "max"];
+
 const Tools = () => {
+  const [time, setTime] = useState(timelines[0]);
+
   return (
     <div className="tools-main">
-      <div className="fullscreen">
-        {fullIcon}
-        <a href="/">Fullscreen</a>
-      </div>
-      <div className="compare">
-        {comapreIcon}
-        <a href="/">Compare</a>
+      <div>
+        <div className="fullscreen">
+          {fullIcon}
+          <a href="/">Fullscreen</a>
+        </div>
+        <div className="compare">
+          {comapreIcon}
+          <a href="/">Compare</a>
+        </div>
       </div>
       <div className="time-line">
-        <a href="/">1d</a>
-        <a href="/">3d</a>
-        <a href="/">1w</a>
-        <a href="/">1m</a>
-        <a href="/">6m</a>
-        <a href="/">1y</a>
-        <a href="/">max</a>
+        {timelines.map((timeline) => (
+          <span
+            onClick={() => setTime(timeline)}
+            className={timeline === time ? "active-time" : ""}
+            style={timeline === time ? {color: '#fff'} : {}}
+            key={timeline}
+          >
+            {timeline}
+          </span>
+        ))}
       </div>
     </div>
   );
