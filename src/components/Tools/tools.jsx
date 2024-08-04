@@ -1,11 +1,7 @@
-import { useState } from "react";
+import { timelines } from "../../lib/constants";
 import "./tools.css";
 
-const timelines = ["1d", "3d", "1w", "1m", "6m", "1y", "max"];
-
-const Tools = () => {
-  const [time, setTime] = useState(timelines[0]);
-
+const Tools = ({ data, handler }) => {
   return (
     <div className="tools-main">
       <div>
@@ -21,12 +17,12 @@ const Tools = () => {
       <div className="time-line">
         {timelines.map((timeline) => (
           <span
-            onClick={() => setTime(timeline)}
-            className={timeline === time ? "active-time" : ""}
-            style={timeline === time ? {color: '#fff'} : {}}
-            key={timeline}
+            onClick={() => handler(timeline)}
+            className={timeline.key === data ? "active-time" : ""}
+            style={timeline.key === data ? { color: "#fff" } : {}}
+            key={timeline.key}
           >
-            {timeline}
+            {timeline.key}
           </span>
         ))}
       </div>

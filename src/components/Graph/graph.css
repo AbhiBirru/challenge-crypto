@@ -1,8 +1,6 @@
 .graph-main {
   margin-top: 26px;
-  margin-left: 60px;
   width: 839px;
   height: 343px;
   border-radius: 5px;
-  background: linear-gradient(180deg, #e8e7ff 0%, rgba(255, 255, 255, 0) 100%);
 }
