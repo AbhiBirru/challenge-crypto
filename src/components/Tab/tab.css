@@ -1,0 +1,22 @@
+.tab-main {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+.tab-list {
+  display: flex;
+  gap: 30px;
+}
+.tab-list > a {
+  text-decoration: none;
+  color: #6f7177;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.77px;
+  text-align: left;
+}
+
+.border-line {
+  width: 100%;
+  border: 1px;
+  border: 1px solid #eff1f3;
+}
