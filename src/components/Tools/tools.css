@@ -1,65 +1,66 @@
 .tools-main {
-  margin: 60px;
-  display: flex;
-  justify-content: space-between;
-  width: 839px;
-}
-
-.tools-main > div {
-  display: flex;
-}
-
-.fullscreen {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.fullscreen > a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.77px;
-  text-align: left;
-
-  color: #6f7177;
-}
-
-.compare {
-  display: flex;
-  align-items: center;
-  margin-left: 31px;
-  gap: 10px;
-}
-
-.compare > a {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.77px;
-  text-align: left;
-  color: #6f7177;
-  text-decoration: none;
-}
-
-.time-line {
-  display: flex;
-  gap: 12px;
-}
-
-.time-line > span {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.77px;
-  text-decoration: none;
-  color: #6f7177;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 5px 14px;
-}
-
-.active-time {
-  background: #4b40ee;
-  border-radius: 5px;
-}
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 839px;
+  }
+  
+  .tools-main > div {
+    display: flex;
+  }
+  
+  .fullscreen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .fullscreen > a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.77px;
+    text-align: left;
+  
+    color: #6f7177;
+  }
+  
+  .compare {
+    display: flex;
+    align-items: center;
+    margin-left: 31px;
+    gap: 10px;
+  }
+  
+  .compare > a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.77px;
+    text-align: left;
+    color: #6f7177;
+    text-decoration: none;
+  }
+  
+  .time-line {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .time-line > span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.77px;
+    text-decoration: none;
+    color: #6f7177;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 14px;
+  }
+  
+  .active-time {
+    background: #4b40ee;
+    border-radius: 5px;
+  }
+  
