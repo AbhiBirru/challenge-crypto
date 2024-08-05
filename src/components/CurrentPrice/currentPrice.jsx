@@ -30,7 +30,7 @@ const CurrentPrice = ({ duration }) => {
       } catch (err) {}
     };
     fetchGraphData();
-  }, []);
+  }, [duration]);
 
   const percentage =
     duration == "max"
