@@ -3,10 +3,10 @@ export const timelines = [
     key: "1d",
     duration: 1,
   },
-  {
-    key: "3d",
-    duration: 3,
-  },
+  // {
+  //   key: "3d",
+  //   duration: 3,
+  // },
   {
     key: "1w",
     duration: 7,

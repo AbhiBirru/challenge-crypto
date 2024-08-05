@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div>
-        <CurrentPrice />
+        <CurrentPrice duration={time.duration} />
         <Tab />
         <Tools data={time.key} handler={setTime} />
         <Graph duration={time.duration} />
