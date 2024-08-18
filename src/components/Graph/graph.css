@@ -1,6 +1,69 @@
 .graph-main {
-  margin-top: 26px;
+  position: relative;
   width: 900px;
-  height: 343px;
+  height: 400px;
+  margin-top: 26px;
+}
+
+.price-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.current-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4b40ee;
+}
+
+.price-label {
+  padding: 5px 10px;
+  background: #1a243a;
   border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-label p {
+  margin: 0;
+}
+.static-price-label {
+  padding: 5px 10px;
+  background: rgba(75, 64, 238, 0.8); /* Area graph price label background */
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.recharts-tooltip-wrapper .recharts-tooltip-label {
+  display: none;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.current-price-tag {
+  fill: #4b40ee;
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.latest-value-tag {
+  fill: #ff6f61;
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.bargraph-container {
+  height: 70px;
+  margin-top: 20px;
+}
+
+.bargraph-chart {
+  height: 100%;
 }
